@@ -1,0 +1,25 @@
+h2 {
+color: violet;
+}
+table th {
+color:white;
+width:15%;
+height:20%;
+text-align:center;
+background-color: blue;
+
+}
+table th,table td {
+border:10px blue;
+padding:15px;
+}
+table {
+border-spacing:2px;
+border-collapse:collapse;
+}
+table tbody tr:nth-child(odd) td {
+background-color: LightBlue;
+}
+table tr {
+text-align:center;
+}

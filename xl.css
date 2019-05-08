@@ -1,25 +1,47 @@
-h2 {
-color: violet;
+body
+{
+background-image:url("A:/cgs/ss.jpg");
+background-repeat:no-repeat;
+background-size:cover;
 }
-table th {
+.nav  {
+color: white;
+padding:20px;
+font-size:150%;
+}
+.nav ul a{
+border:1px solid white;
+padding:10px;
+margin:100px;
+text-decoration:none;
+background-color:white;
+}
+.nav ul a.active
+{
+background-color:yellow;
+}
+.login {
+padding:10px;
+font-size:120%;
 color:white;
-width:15%;
-height:20%;
-text-align:center;
-background-color: blue;
 
 }
-table th,table td {
-border:10px blue;
-padding:15px;
+.signup {
+color:white;
+padding:80px;
+font-size:120%;
 }
-table {
-border-spacing:2px;
-border-collapse:collapse;
+.help {
+color:white;
+padding:10px;
+font-size:120%;
 }
-table tbody tr:nth-child(odd) td {
-background-color: LightBlue;
+.front {
+color: white;
+padding:5px;
+font-size:120%;
 }
-table tr {
-text-align:center;
+h1
+{
+color:blue;;
 }

@@ -1,0 +1,72 @@
+header
+{
+color:white;
+padding:5px;
+font-size:150%;
+}
+footer
+{
+color:white;
+padding:20px;
+}
+
+body
+{
+background-image:url("A:/cgs/ss.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+.nav  {
+color: white;
+padding:20px;
+font-size:150%;
+}
+.nav ul a{
+padding:5px;
+margin:30px;
+color:white;
+text-decoration:none;
+background-color:none;
+}
+.nav ul a.active
+{
+background-color:yellow;
+}
+
+.gmail div
+{
+display:none;
+}
+.gmail div:target
+{
+display:block;
+}
+#home
+{
+color: white;
+padding:5px;
+font-size:120%;
+height:80%;
+width:80%;
+margin-left:80px;
+margin-right:80px;
+}
+#login {
+padding:10px;
+font-size:120%;
+color:white;
+margin-top:100px;
+margin-bottom:100px;
+}
+#signup {
+color:white;
+padding:80px;
+font-size:120%;
+}
+#help {
+color:white;
+padding:10px;
+font-size:120%;
+margin-left:100px;
+margin-right:100px;
+}

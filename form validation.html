@@ -6,34 +6,43 @@
 <script>
 function validation()
 {
-    var firstname = document.forms["RegForm"]["first"].value;
-    var lastname = document.forms["RegForm"]["last"].value;               
-    var email = document.forms["RegForm"]["email"];
-    var password = document.forms["RegForm"]["pass"];
-    var password1 = document.forms["RegForm"]["passs"];
-    var date = document.forms["RegForm"]["date"];
-    var month = document.forms["RegForm"]["month"];
-    var year = document.forms["RegForm"]["year"];
-    var male = document.forms["RegForm"]["male"]
-    var female = document.forms["RegForm"]["female"]
-    var phone = document.forms["RegForm"]["num"];  
-    var license =  document.forms["RegForm"]["check"];  
+    var first = document.forms["RegForm"]["first"].value;
+    var last = document.forms["RegForm"]["last"].value;               
+    var email = document.forms["RegForm"]["email"].value;
+    var pass = document.forms["RegForm"]["pass"].value;
+    var passs = document.forms["RegForm"]["passs"].value;
+    var date = document.forms["RegForm"]["date"].value;
+    var month = document.forms["RegForm"]["month"].value;
+    var year = document.forms["RegForm"]["year"].value;
+    var male = document.forms["RegForm"]["male"].value;
+    var female = document.forms["RegForm"]["female"].value;
+    var num = document.forms["RegForm"]["num"].value;;  
+    var check =  document.forms["RegForm"]["check"].value;  
       
-    if (firstname.value == "")                                  
+    if (first.value.length == 0)                                  
     { 
         window.alert("Please enter your firstname."); 
-        firstname.focus(); 
+        first.focus(); 
         return false; 
     } 
+    if(first.value.length >= 5 && first.value.length <= 25)
+      {  	
+        return true;  	
+      }
+     else
+      {  	
+	alert("Please input between " 5 " and " 25 " characters");  		
+        return false;  	
+      } 
    
-    if (lastname.value == "")                               
+    if (last.value.length == 0)                               
     { 
         window.alert("Please enter your lastname."); 
-        lastname.focus(); 
+        last.focus(); 
         return false; 
     } 
        
-    if (email.value == "")                                   
+    if (email.value.length == 0)                                   
     { 
         window.alert("Please enter a valid e-mail address."); 
         email.focus(); 
@@ -46,29 +55,29 @@ function validation()
         email.focus(); 
         return false; 
     }
-    if (phone.value == "")                           
+    if (num.value.length == 0)                           
     { 
         window.alert("Please enter your telephone number."); 
-        phone.focus(); 
+        num.focus(); 
         return false; 
     } 
    
-    if (password.value == "")                        
+    if (pass.value == "")                        
     { 
         window.alert("Please enter your password"); 
-        password.focus(); 
+        pass.focus(); 
         return false; 
     } 
-     if (password1.value == "")                        
+     if (passs.value == "")                        
     { 
         window.alert("Please enter your password"); 
-        password1.focus(); 
+        passs.focus(); 
         return false; 
     } 
-     if (password.value! == password1.value)                        
+     if (pass.value! == passs.value)                        
     { 
         window.alert("Please enter corret password"); 
-        password.focus(); 
+        passs.focus(); 
         return false; 
     } 
    
@@ -91,7 +100,7 @@ function validation()
 
 </script>
   <center>
-  <form name="RegForm" action="A:/cgs/action_page.php" onsubmit="return validation()" method="post">
+  <form name="RegForm"  onsubmit="return validation()">
     
     
     <table>
@@ -182,7 +191,7 @@ function validation()
 <br>
 <br>
 <input type="button" name="cancel" value="Cancel">
-<input type="button" name="regi" value="Register"  >
+<input type="submit" name="regi" value="Register"  >
   </form>
 </center>
  </body>

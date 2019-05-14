@@ -34,52 +34,98 @@ By February 2016, Gmail had one billion active users worldwide.
 </div>
 <div id="signup">
 <center>
-  <form>
+ <form>
     
     
     <table>
        <tr>
          <td>First Name</td>
-         <td><input type="text" name="first" placeholder="Enter the first name.."></td>
+         <td><input type="text" name="first" pattern="[A-Za-z]{1,25}" title="Please enter characters between 1 to 25"></td>
        </tr>
 <tr>
          <td>Last Name</td>
-         <td><input type="text" name="last" placeholder="Enter the last name.."></td>
+         <td><input type="text" name="last" pattern="[A-Za-z]{1,25}" title="Please enter characters between 1 to 25"></td>
        </tr>
 <tr>
          <td>Create a email address</td>
-         <td><input type="email" name="email"></td>
+         <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid email address"></td>
        </tr>
 <tr>
          <td>Create a password</td>
-         <td><input type="password" name="pass" ></td>
+         <td><input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
        </tr>
 <tr>
          <td>Confirm a password</td>
-         <td><input type="password" name="pass" ></td>
+         <td><input type="password" name="passs" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" ></td>
        </tr>
 <tr>
          <td>Date of Birth</td>
-         <td><input type="text" name="day" >/<input type="text" name="month">/<input type="text" name="year"></td>
+         <td><select required>
+            <option value="">choose date </option> 
+            <option value="one">1</option> 
+            <option value="two">2</option> 
+            <option value="three">3</option> 
+            <option value="four">4</option> 
+            <option value="five">5</option>
+            <option value="six">6</option> 
+            <option value="seven">7</option> 
+            <option value="eight">8</option> 
+            <option value="nine">9</option> 
+            <option value="ten">10</option>
+            <option value="eleven">11</option> 
+            <option value="twelve">12</option> 
+            <option value="thre">13</option> 
+            <option value="for">14</option> 
+            <option value="fiv">15</option>
+            <option value="si">16</option> 
+            <option value="sev">17</option> 
+            <option value="eig">18</option> 
+            <option value="ni">19</option> 
+            <option value="twenty">20</option>
+            <option value="tweone">21</option> 
+            <option value="twetwo">22</option> 
+            <option value="twethree">23</option> 
+            <option value="twefour">24</option> 
+            <option value="twefive">25</option>
+            <option value="twesix">26</option> 
+            <option value="twesev">27</option> 
+            <option value="tweeig">28</option> 
+            <option value="twenin">29</option> 
+            <option value="thirty">30</option>
+            <option value="thirtyone">31</option> 
+        </select>/<select required> 
+            <option value="">choose month</option>s
+            <option value="jan">JAN</option> 
+            <option value="feb">FEB</option> 
+            <option value="mar">MAR</option> 
+            <option value="apr">APR</option> 
+            <option value="may">MAY</option>
+            <option value="jun">JUN</option> 
+            <option value="jul">JUL</option> 
+            <option value="aug">AUG</option> 
+            <option value="sep">SEP</option> 
+            <option value="oct">OCT</option>
+            <option value="nov">NOV</option> 
+            <option value="nov">DEC</option> </select>/<input type="text" name="year" placeholder="enter year" pattern="[0-9]{4}" title="enter a valid year"></td>
        </tr>
 <tr>
          <td>Gender</td>
-         <td><input type="radio" name="male" >Male<input type="radio" name="female">Female</td>
+         <td><input type="radio" name="male" value="Male"><label for="Male">Male</label><input type="radio" name="male" value="Female"><label for="Female">Female</label></td>
        </tr>
 <tr>
          <td>Phone number</td>
-         <td><input type="text" name="num" ></td>
+         <td><input type="text" name="num" pattern="[0-9]{10}" title="Please enter 10 digit phone number" ></td>
        </tr>
 <tr>
          
-         <td><input type="checkbox" name="check">License accepted</input></td>
+         <td><input type="checkbox" required name="check">License accepted</input></td>
        </tr>
     </table>
 
 <br>
 <br>
 <input type="button" name="cancel" value="Cancel">
-<input type="button" name="regi" value="Register">
+<input type="submit" name="regi" value="Register"  >
   </form>
 </center>
 </div>
@@ -103,12 +149,12 @@ Password</td><td><input type="password" name="pass"></input></td></tr>
 <h3>How to use:</h3>
  <p>1. Open web browser.
     Go to https://www.gmail.com/ in your computer's web browser. This will open your Gmail inbox if you're logged in. 
-   •If you aren't logged in, you'll need to enter your email address and password when prompted.
+   â€¢If you aren't logged in, you'll need to enter your email address and password when prompted.
 </P>
 <p>2. Make sure you're using the most current Gmail inbox.
  Do the following: 
    i) Click the "Settings" gear Image titled Android7settings.png  .
-   ii) Click Try the new Gmail at the top of the drop-down menu. •If you see Go back to classic Gmail in the drop-down menu, you're already using the new version of Gmail.
+   ii) Click Try the new Gmail at the top of the drop-down menu. â€¢If you see Go back to classic Gmail in the drop-down menu, you're already using the new version of Gmail.
 
 </p>
 <p>3. Click Compose. It's in the top-left corner of the page. Doing so prompts a "New Message" window in the lower-right side of the page.</p>
@@ -119,9 +165,9 @@ If you want to CC (or BCC) someone, click the Cc (or Bcc link) on the right side
 In general, it's best to keep your subjects limited to a few words.</p>
 <p>6. Enter your email's body text. In the large text box below the "Subject" field, type in whatever message you want to send to your recipient(s).</p>
 <p>7. Add formatting or attachments to your email. While optional, you can easily change the appearance of your message's text, attach a file, or upload a photo:
-Formatting — Select the text you want to format by clicking and dragging across it, then click one of the formatting options at the bottom of the email.
-Files — Click the paperclip-shaped "Attachments"  Image titled Android7paperclip.png icon at the bottom of the email, then select files to upload.
-Photos — Click the "Photos"  Image titled Android7image.png icon at the bottom of the email, then select a location and select photos to upload.</p>
+Formatting â€” Select the text you want to format by clicking and dragging across it, then click one of the formatting options at the bottom of the email.
+Files â€” Click the paperclip-shaped "Attachments"  Image titled Android7paperclip.png icon at the bottom of the email, then select files to upload.
+Photos â€” Click the "Photos"  Image titled Android7image.png icon at the bottom of the email, then select a location and select photos to upload.</p>
 <p>8. Click Send. It's at the bottom of the "New Message" window. Doing so will send your email to the specified recipient(s). </p>
 </div>
 </div>

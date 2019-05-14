@@ -132,16 +132,16 @@ By February 2016, Gmail had one billion active users worldwide.
   <div id="login">
 <center>
 <form>
-<table><tr><td>Username</td><td><input type="email" name="email"></input></td></tr>
+<table><tr><td>Username</td><td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid email address"></input></td></tr>
 
 
 <tr>
 <td>
-Password</td><td><input type="password" name="pass"></input></td></tr>
+Password</td><td><input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></input></td></tr>
 
 </table>
 <a href="#">forget password</a>
-<input type="button" name="button" value="Sign in"></input>
+<input type="submit" name="butt" value="Sign in"></input>
 </form>
 </center>
 </div>

@@ -1,0 +1,53 @@
+<html>
+<style>
+h2 {
+color:Blue;
+}
+body
+{
+background-color:pink;
+}
+</style>
+<body>
+<h2 align="center" > VOWELS<h2>
+<center>
+<table>
+<tr>
+<td>Enter a string:</td>
+<td><input type="text" name="number" id="number"></td>
+</tr>
+<br>
+<tr>
+<td>count of vowels:</td>
+<td><input type="text" name="reslut" id="result"></td>
+</tr>
+</table>
+<input type="button" name="button" value="count" onclick="vowel()">
+<br>
+
+</center>
+<script>
+function vowel()
+{
+var str=document.getElementById("number").value;
+console.log(str);
+var result;
+var vowel_list = 'aeiouAEIOU';
+var vcount = 0;
+  
+  for(var x = 0; x < str.length ; x++)
+  {
+    if (vowel_list.indexOf(str[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  } 
+  result=vcount;
+      console.log(result);
+document.getElementById("result").value=result;
+}
+
+</script>
+</body>
+</html>

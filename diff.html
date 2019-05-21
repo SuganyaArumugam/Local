@@ -1,0 +1,47 @@
+<html>
+<style>
+h2 {
+color:Blue;
+}
+body
+{
+background-color:pink;
+}
+</style>
+<body>
+<h2 align="center" > DIFFERENCE<h2>
+<center>
+<table>
+
+<tr>
+<td>Result:</td>
+<td><input type="text" name="reslut" id="result"></td>
+</tr>
+</table>
+<input type="button" name="button" value="Difference" onclick="bigsmall()">
+
+</center>
+<script>
+function bigsmall()
+{
+var numbers = [1,2,3,100,-200];
+var result;
+var largest = numbers[0];
+var smallest = numbers[0];
+
+for (var i = 1; i < numbers.length; i++) {
+    if(numbers[i]>=0)
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    }
+    else if(numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+}
+result=largest-smallest;
+      console.log(result);
+      document.getElementById("result").value=result;
+}
+</script>
+</body>
+</html>

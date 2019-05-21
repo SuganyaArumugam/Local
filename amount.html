@@ -1,0 +1,44 @@
+<html>
+<style>
+h2 {
+color:Blue;
+}
+body
+{
+background-color:pink;
+}
+</style>
+<body>
+<h2 align="center" > AMOUNT<h2>
+<center>
+<table>
+<tr>
+<td>Enter amount:</td>
+<td><input type="text" name="number" id="number"></td>
+</tr>
+<br>
+<tr>
+<td>Rupees:</td>
+<td><input type="text" name="reslut" id="result"></td>
+</tr>
+</table>
+<input type="button" name="button" value="covert" onclick="amount()">
+<br>
+
+</center>
+<script>
+function amount()
+{
+var num=parseInt(document.getElementById("number").value);
+console.log(num);
+    var result;
+    var num_parts = num.toString().split(".");
+    num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    result=num_parts.join(".");
+    
+      console.log(result);
+      document.getElementById("result").value=result;
+}
+</script>
+</body>
+</html>

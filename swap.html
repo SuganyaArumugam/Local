@@ -1,0 +1,55 @@
+<html>
+<style>
+h2 {
+color:Blue;
+}
+body
+{
+background-color:pink;
+}
+</style>
+<body>
+<h2 align="center" > SWAP<h2>
+<center>
+<table>
+<tr>
+<td>Enter a swap number:</td>
+<td><input type="text" name="number" id="number"></td>
+</tr>
+<br>
+<tr>
+<td>Result:</td>
+<td><input type="text" name="reslut" id="result"></td>
+</tr>
+</table>
+<input type="button" name="button" value="swap a number" onclick="swap()">
+
+</center>
+<script>
+function swap()
+{
+var num=parseInt(document.getElementById("number").value);
+console.log(num);
+var result=0,x=1;
+ if(num%2!=0)
+ {
+ result='false';
+ } 
+ else
+{  
+ 
+   
+	while (num != 0) {
+		var dg1 = num % 10,
+			dg2 = ((num - dg1) / 10) % 10;
+		result += x * (10 * dg1 + dg2);
+		num = Math.floor(num / 100);
+		x *= 100;
+	}
+}
+      console.log(result);
+      document.getElementById("result").value=result;
+}
+</script>
+</body>
+</html>
